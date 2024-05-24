@@ -1,88 +1,223 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Vuiii</title>
-    <link rel="stylesheet" href="testweb.css">
-    <style>
-         body {
-            font-family: Arial, sans-serif;
-        }
-        .game {
-            margin: 0 auto;
-            width: 300px;
-        }
-        .puzzle {
-            margin-bottom: 20px;
-        }
-        #answer {
-            width: 100%;
-            margin-bottom: 20px;
-        }
-    </style>
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="web1.css">
 </head>
 <body>
-    <a href="https://gamevui.vn/timkiem/?q=gi%E1%BA%A3i+%C4%91%E1%BB%91">Trang chủ</a>
-<header>
-    <h1>Game Puzzle</h1>
-</header>
-
-<main>
-    <section class="game">
-        <!-- Đăng ký -->
-        <div id="register">
-          <h2>Đăng ký</h2>
-            <input type="text" id="registerUsername" placeholder="Tên đăng nhập">
-            <input type="password" id="registerPassword" placeholder="Mật khẩu">
-            <button onclick="register()">Đăng ký</button>
-        </div>
-
-        <!-- Đăng nhập -->
-        <div id="login" style="display: none;">
-            <h2>Đăng nhập</h2>
-            <button id="returnButton" onclick="returnToPrevious()">Return</button>
-            <input type="text" id="loginUsername" placeholder="Tên đăng nhập">
-            <input type="password" id="loginPassword" placeholder="Mật khẩu">
-            <button onclick="login()">Đăng nhập</button>
-        </div>
-
-        <!-- Chọn loại game -->
-        <div id="gameSelection" style="display: none;">
-            <button id="returnButton" onclick="returnToPrevious()">Return</button>
-            <h2>Chọn loại game</h2>
-            <button onclick="startGame('Giải đố nhanh')">Giải đố nhanh</button>
-            <button onclick="startGame('Giải đố Toán học')">Giải đố Toán học</button>
-            <button onclick="startGame('Giải đố Tiếng Anh')">Giải đố Tiếng Anh</button>
-        </div>
-        <div id="questionContainer" style="display: none;">
-            <button id="returnButton" onclick="returnToPrevious()">Return</button>
-            <h2 id="question"></h2>
-            <div class="puzzle">
-                <button id="choiceA" style="display: none;">A</button>
-                <button id="choiceB" style="display: none;">B</button>
-                <button id="choiceC" style="display: none;">C</button>
-                <button id="choiceD" style="display: none;">D</button>
+    <header>
+        <div class="container">
+            <div class="banner">
+                <h1>Trò chơi trí tuệ</h1>
+                <p>Chơi ngay và thể hiện trí tuệ của bạn!</p>
+                <a href="#types" class="btn">Bắt đầu chơi</a>
             </div>
-          
-            <p id="result"></p>
-            <p id="score">Điểm thưởng: 0</p>
-            <button id="hint">Gợi ý</button>
-            <div id="confirmation" style="display: none;">
-                <p>Bạn có chắc chắn không?</p>
-                <button id="yes">Có</button>
-                <button id="no">Không</button>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#types">Loại game</a></li>
+                    <li><a href="#rules">Luật chơi</a></li>
+                    <li><a href="#how-to-play">Cách chơi</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="congratulate" style="display: none ;"> Congratulate
-            <button id="returnButton" onclick="returnToPrevious()">Return</button>
-            <button id="restartButton">Restart</button>
-           </div>
+    </header>
+    
+    <section id="home">
+        <div class="container">
+            <h2>Trang chủ</h2>
+            <p>Chào mừng bạn đến với trang web chơi game trí tuệ!</p>
+            <p>Trang web này cung cấp một loạt các trò chơi trí tuệ để bạn thử thách khả năng suy luận và logic của mình.</p>
+        </div>
     </section>
-</main>
-<footer>
-    <p>&copy; 2024 Game Puzzle. All rights reserved.<a href="https://example.com">Trang chủ</a></p>
-</footer>
-<script src="testweb.js"></script>
-</body>
-</html>
+
+    <section id="types">
+        <div class="container">
+            <h2>Loại game</h2>
+            <p>Dưới đây là một số loại game trí tuệ bạn có thể thưởng thức:</p>
+            <div class="game-type">
+                <button class="game-btn" data-target="home">Đố Vui</button>
+                <button class="game-btn" data-target="rules">Giải Toán Nhanh</button>
+                <button class="game-btn" data-target="rules">Giải Đố Dân Gian</button>
+                <button class="game-btn" data-target="rules">Câu Hỏi Tiếng Anh Căn Bản</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="rules">
+        <div class="container">
+            <h2>Luật chơi</h2>
+            <p>Luật chơi của từng trò chơi sẽ được giới thiệu chi tiết tại đây.</p>
+            <h3>Giải Toán Nhanh</h3>
+            <p>Trong trò chơi Giải Toán Nhanh, Bạn sẽ có 3 giây để trả lời mỗi câu hỏi và sau mỗi câu hỏi độ khó sẽ tăng dần.</p>
+            <h3>Giải Đố Dân Gian</h3>
+            <p>Trò chơi Giải Đố Dân Gian yêu cầu bạn trả lời những câu hỏi xoắn não, đánh lừa được trích dẫn từ những câu đố truyền miệng dân gian Việt Nam.</p>
+            <!-- Thêm luật chơi cho các trò chơi khác -->
+        </div>
+    </section>
+
+    <section id="how-to-play">
+        <div class="container">
+            <h2>Cách chơi</h2>
+            <p>Thông tin về cách chơi của từng trò chơi sẽ được hướng dẫn ở đây.</p>
+            <h3>Giải Toán Nhanh</h3>
+            <p>Trong trò chơi Giải Toán Nhanh, bạn cần tính toán chi tiết và chọn câu trả lời đúng.</p>
+            <!-- Thêm hướng dẫn cách chơi cho các trò chơi khác -->
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Giới thiệu</h2>
+            <p>Trang web chơi game trí tuệ là một dự án nhằm mang lại niềm vui và thử thách cho người chơi mọi lứa tuổi.</p>
+            <p>Chúng tôi tự hào cung cấp các trò ch<section id="features">
+                <div class="container">
+                    <h2>Đặc điểm của trò chơi</h2>
+                    <div class="feature">
+                        <img src="game1.jpg" alt="Game 1">
+                        <h3>Trò chơi Giải Toán Nhanh</h3>
+                        <p>Giải Toán Nhanh là một trò chơi sự chính xác trong tính toán và rèn luyện bộ não nhanh nhạy.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="game2.jpg" alt="Game 2">
+                        <h3>Câu Hỏi Tiếng Anh</h3>
+                        <p>Phần Câu Hỏi Tiếng Anh yêu cầu bạn có kiến thức về ngoại ngữ để nhận biết và suy luận để tìm ra câu trả lời cho mỗi câu hỏi.</p>
+                    </div>
+                    <!-- Thêm các đặc điểm của các trò chơi khác -->
+                </div>
+            </section>
+            
+            <section id="contact">
+                <div class="container">
+                    <h2>Liên hệ</h2>
+                    <p>Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ với chúng tôi:</p>
+                    <ul>
+                        <li>Email: info@example.com</li>
+                        <li>Điện thoại: 0123 456 789</li>
+                        <li>Địa chỉ: Số 123, Đường ABC, Thành phố XYZ</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <footer>
+                <div class="container">
+                    <p>&copy; 2024 Trang web chơi game trí tuệ. Đã đăng ký bản quyền.</p>
+                </div>
+            </footer>
+            
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Trang chủ</title>
+                <link rel="stylesheet" href="web1.css">
+            </head>
+            <body>
+                <header>
+                    <div class="container">
+                        <div class="banner">
+                            <h1>Trò chơi trí tuệ</h1>
+                            <p>Chơi ngay và thể hiện trí tuệ của bạn!</p>
+                            <a href="#types" class="btn">Bắt đầu chơi</a>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="#home">Trang chủ</a></li>
+                                <li><a href="#types">Loại game</a></li>
+                                <li><a href="#rules">Luật chơi</a></li>
+                                <li><a href="#how-to-play">Cách chơi</a></li>
+                                <li><a href="#about">Giới thiệu</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                
+                <section id="home">
+                    <div class="container">
+                        <h2>Trang chủ</h2>
+                        <p>Chào mừng bạn đến với trang web chơi game trí tuệ!</p>
+                        <p>Trang web này cung cấp một loạt các trò chơi trí tuệ để bạn thử thách khả năng suy luận và logic của mình.</p>
+                    </div>
+                </section>
+            
+                <section id="types">
+                    <div class="container">
+                        <h2>Loại game</h2>
+                        <p>Dưới đây là một số loại game trí tuệ bạn có thể thưởng thức:</p>
+                        <div class="game-type">
+                            <button class="game-btn" data-target="home">Đố Vui</button>
+                            <button class="game-btn" data-target="rules">Giải Toán Nhanh</button>
+                            <button class="game-btn" data-target="rules">Giải Đố Dân Gian</button>
+                            <button class="game-btn" data-target="rules">Câu Hỏi Tiếng Anh Căn Bản</button>
+                        </div>
+                    </div>
+                </section>
+                
+            
+                <section id="rules">
+                    <div class="container">
+                        <h2>Luật chơi</h2>
+                        <p>Luật chơi của từng trò chơi sẽ được giới thiệu chi tiết tại đây.</p>
+                        <h3>Giải Toán Nhanh</h3>
+                        <p>Trong trò chơi Giải Toán Nhanh, Bạn sẽ có 3 giây để trả lời mỗi câu hỏi và sau mỗi câu hỏi độ khó sẽ tăng dần.</p>
+                        <h3>Giải Đố Dân Gian</h3>
+                        <p>Trò chơi Giải Đố Dân Gian yêu cầu bạn trả lời những câu hỏi xoắn não, đánh lừa được trích dẫn từ những câu đố truyền miệng dân gian Việt Nam.</p>
+                        <!-- Thêm luật chơi cho các trò chơi khác -->
+                    </div>
+                </section>
+            
+                <section id="how-to-play">
+                    <div class="container">
+                        <h2>Cách chơi</h2>
+                        <p>Thông tin về cách chơi của từng trò chơi sẽ được hướng dẫn ở đây.</p>
+                        <h3>Giải Toán Nhanh</h3>
+                        <p>Trong trò chơi Giải Toán Nhanh, bạn cần tính toán chi tiết và chọn câu trả lời đúng.</p>
+                        <!-- Thêm hướng dẫn cách chơi cho các trò chơi khác -->
+                    </div>
+                </section>
+            
+                <section id="about">
+                    <div class="container">
+                        <h2>Giới thiệu</h2>
+                        <p>Trang web chơi game trí tuệ là một dự án nhằm mang lại niềm vui và thử thách cho người chơi mọi lứa tuổi.</p>
+                        <p>Chúng tôi tự hào cung cấp các trò ch<section id="features">
+                            <div class="container">
+                                <h2>Đặc điểm của trò chơi</h2>
+                                <div class="feature">
+                                    <img src="game1.jpg" alt="Game 1">
+                                    <h3>Trò chơi Giải Toán Nhanh</h3>
+                                    <p>Giải Toán Nhanh là một trò chơi sự chính xác trong tính toán và rèn luyện bộ não nhanh nhạy.</p>
+                                </div>
+                                <div class="feature">
+                                    <img src="game2.jpg" alt="Game 2">
+                                    <h3>Câu Hỏi Tiếng Anh</h3>
+                                    <p>Phần Câu Hỏi Tiếng Anh yêu cầu bạn có kiến thức về ngoại ngữ để nhận biết và suy luận để tìm ra câu trả lời cho mỗi câu hỏi.</p>
+                                </div>
+                                <!-- Thêm các đặc điểm của các trò chơi khác -->
+                            </div>
+                        </section>
+                        
+                        <section id="contact">
+                            <div class="container">
+                                <h2>Liên hệ</h2>
+                                <p>Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ với chúng tôi:</p>
+                                <ul>
+                                    <li>Email: info@example.com</li>
+                                    <li>Điện thoại: 0123 456 789</li>
+                                    <li>Địa chỉ: Số 123, Đường ABC, Thành phố XYZ</li>
+                                </ul>
+                            </div>
+                        </section>
+                        
+                        <footer>
+                            <div class="container">
+                                <p>&copy; 2024 Trang web chơi game trí tuệ. Đã đăng ký bản quyền.</p>
+                            </div>
+                        </footer>
+                        
+            
