@@ -1,132 +1,101 @@
-
-/* Reset CSS */
-* {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f5f5f5;
+    background-color: #1f1f1f;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+.container {
+    width: 80%;
+    margin: auto;
     padding: 20px;
 }
 
-header, footer {
-    text-align: center;
+h1, h2, h3 {
+    color: #f5f5f5;
+    border-bottom: 2px solid #3f3f3f;
+    padding-bottom: 10px;
+}
+
+section {
     margin-bottom: 20px;
-}
-
-.game {
-    margin: 0 auto;
-    width: 300px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #2f2f2f;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-h1 {
-    font-size: 24px;
+p {
+    line-height: 1.6;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-#register, #login {
-    text-align: center;
-}
-
-input[type="text"],
-input[type="password"],
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+.feature img {
+    width: 200px;
+    margin-right: 20px;
     border-radius: 5px;
-    font-size: 16px;
 }
 
-button {
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+#contact ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-.puzzle {
-    margin-bottom: 20px;
-}
-
-.puzzle button {
-    display: block;
-    width: 100%;
-    padding: 10px;
+#contact li {
     margin-bottom: 10px;
-    background-color: #007bff;
-    color: #fff;
+    color: #b5b5b5;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d26d7c;
+    color: white;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
 }
 
-.puzzle button:hover {
-    background-color: #0056b3;
-}
-.congratulate {
-    color: green;
-    font-size: 40px;
-    text-align: center;
+.btn:hover {
+    background-color: #d26d7c;
+   
 }
 
-#result, #score {
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-#confirmation {
-    display: none;
-    margin-top: 10px;
-}
-
-#confirmation p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-#confirmation button {
+.game-btn {
     margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #d26d7c;
+    ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color: #666;
-    font-size: 14px;
-}
-#returnButton {
-    background-color: #4CAF50; /* Màu nền */
-    border: none; /* Không viền */
-    color: white; /* Màu chữ */
-    padding: 15px 32px; /* Padding */
-    text-align: center; /* Căn giữa text */
-    text-decoration: none; /* Không gạch chân */
-    display: inline-block; /* Hiển thị inline-block */
-    font-size: 16px; /* Kích thước font */
-    margin: 4px 2px; /* Margin */
-    cursor: pointer; /* Con trỏ chuột */
-}
+.game-btn:hover {
+    background-color: #d26d7c;
 
-#returnButton:hover {
-    background-color: #45a049; /* Màu nền khi hover */
 }
