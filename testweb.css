@@ -53,6 +53,7 @@ body {
     transform: translate(0, 100%);
     opacity:0;
     background-color: rgba(214, 96, 96, 0.5); /* Add this line */
+    border-radius: 10px;
 }
 
 .card:hover .title {
