@@ -49,6 +49,7 @@ body {
 }
 
 .card-content > .title {
+    text-align: center;
     padding-left:10px;
     transform: translate(0, 100%);
     opacity:0;
