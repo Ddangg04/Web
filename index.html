@@ -1,150 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
-    <link rel="stylesheet" href="testweb.css">
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <div class="banner">
-                <h1>Trò chơi trí tuệ</h1>
-                <p>Chơi ngay và thể hiện trí tuệ của bạn!</p>
-              <div class="container1">
-                <div class="card">
-                  <div class="card-content">
-                    <svg>...</svg>
-                    <img class="background" src="picture web/c767677e5df2c678a5a58a764bd42136.jpg">
-                    <h3 class=title>Game1</h3>
-                  </div>
-                  <div class ="backdrop"></div>
-                </div>
-                <div class="card">
-                  <div class="card-content">
-                    <svg>...</svg>
-                    <img class="background" src="picture web/c767677e5df2c678a5a58a764bd42136.jpg">
-                    <h3 class=title>Game2</h3>
-                  </div>
-                  <div class ="backdrop"></div>
-                </div>
-                <div class="card">
-                  <div class="card-content">
-                    <svg>...</svg>
-                    <img class="background" src="picture web/c767677e5df2c678a5a58a764bd42136.jpg">
-                    <h3 class=title>Game3</h3>
-                  </div>
-                  <div class ="backdrop"></div>
-                </div>
-                <div class="card">
-                  <div class="card-content">
-                    <svg>...</svg>
-                    <img class="background" src="picture web/c767677e5df2c678a5a58a764bd42136.jpg">
-                    <h3 class=title>Game4</h3>
-                  </div>
-                  <div class ="backdrop"></div>
-                </div>
-              </div>
-                <a href="#types" class="btn">Bắt đầu chơi</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Trang chủ</a></li>
-                    <li><a href="#types">Loại game</a></li>
-                    <li><a href="#rules">Luật chơi</a></li>
-                    <li><a href="#how-to-play">Cách chơi</a></li>
-                    <li><a href="#about">Giới thiệu</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ | Double D</title>
+    <link rel="stylesheet" href="./index.css" class="css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="main-menu">
+            <ul class="menu">
+                <li><a href="toan.html">TOÁN HỌC</a>
+                    <ul class="sub-menu">
+                        <div class="cat-sub-menu">
+                            <div><a href="">Nâng Cao Kiến Thức</a></div>
+                            <div><a href="">Phát Huy Tốc Độ</a></div>
+                            <div><a href="">Rèn Luyện Khả Năng Tính Toán</a></div>
     
-    <section id="home">
-        <div class="container">
-            <h2>Trang chủ</h2>
-            <p>Chào mừng bạn đến với trang web chơi game trí tuệ!</p>
-            <p>Trang web này cung cấp một loạt các trò chơi trí tuệ để bạn thử thách khả năng suy luận và logic của mình.</p>
+                        </div>
+                        <div class="list-submenu">
+                            <div class="item-list-submenu">
+                                <h3>
+                                    <a href="">Chọn lựa</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">Giải Nhanh</a></li>
+                                    <li><a href="">Giải Khó</a></li>
+                                  
+                                </ul>
+                            </div>
+                            <div class="item-list-submenu">
+                                <h3>
+                                    <a href="">Kiến Thức</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">Kiến Thức Cơ Bản</a></li>
+                                    <li><a href="">Kiến Thức Nâng Cao</a></li>
+                                    <li><a href="">Kiến Thức Phức Tạp</a></li>
+                                </ul>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="ta.html">TIẾNG ANH</a>
+                    <ul class="sub-menu">
+                        <div class="cat-sub-menu">
+                            <div><a href="">Tìm Hiểu Tiếng Anh Căn Bản</a></div>
+                        </div>
+                        <div class="list-submenu">
+                            <div class="item-list-submenu">
+                                <h3>
+                                    <a href="">Chọn lựa</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">Tổng Hợp</a></li>
+                                    <li><a href="">Từ Vựng</a></li>
+                                    <li><a href="">Ngữ Pháp</a></li>
+                                  
+                                </ul>
+                            </div>
+                            <div class="item-list-submenu">
+                                <h3>
+                                    <a href="">Kiến Thức</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">Kiến Thức Cơ Bản</a></li>
+                                    <li><a href="">Kiến Thức Nâng Cao</a></li>
+                                    <li><a href="">Kiến Thức Phức Tạp</a></li>
+                                </ul>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="toan-ta.html">GIẢI TOÁN BẰNG TIẾNG ANH</a>
+                    <ul class="sub-menu">
+                        <div class="list-submenu">
+                            <div class="item-list-submenu" style="margin-right: 50px;">
+                                <h3>
+                                    <a href="" style="color: red;">TOÁN ĐƠN GIẢN</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">LEVEL 1</a></li>
+                                    <li><a href="">LEVEL 2</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-submenu">
+                            <div class="item-list-submenu">
+                                <h3>
+                                    <a href="" style="color: #FF0000;">TOÁN NÂNG CAO</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">LEVEL 1</a></li>
+                                    <li><a href="">LEVEL 2</a></li>
+                                </ul>
+                            </div>
+                            <div class="item-list-submenu">
+                                <h3>
+                                    <a href="" style="color: red;">GIẢI SIÊU NHANH</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="" style="color: red;">LEVEL 1(5s)</a></li>
+                                    <li><a href="" style="color: red;">LEVEL 2(10s)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="vui.html">ĐỐ VUI</a>
+                    <ul class="sub-menu">
+                        <div class="list-submenu">
+                            <div class="item-list-submenu" style="margin-right: 50px;">
+                                <h3>
+                                    <a href="" >GIẢI ĐỐ DÂN GIAN</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">LEVEL 1</a></li>
+                                    <li><a href="">LEVEL 2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-submenu">
+                            <div class="item-list-submenu">
+                                <h3>
+                                    <a href="">ĐỐ MẸO</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">LEVEL 1</a></li>
+                                    <li><a href="">LEVEL 2</a></li>
+                                </ul>
+                            </div>
+                            <div class="item-list-submenu">
+                                <h3>
+                                    <a href="">GỢI Ý</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">CÂU HỎI ĐỐ VUI</a></li>
+                                    <li><a href="">CÂU HỎI ĐỐ MẸO</a></li>
+                                </ul>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="tips.html">CÁCH CHƠI</a>
+                    <ul class="sub-menu">
+                        <div class="list-submenu">
+                            <div class="item-list-submenu" style="margin-right: 50px;">
+                                <h3>
+                                    <a href="" >TOÁN HỌC</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">GIẢI NHANH</a></li>
+                                    <li><a href="">GIẢI KHÓ</a></li>                                 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="list-submenu">
+                            <div class="item-list-submenu">
+                                <h3>
+                                    <a href="">TIẾNG ANH</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">TỪ VỰNG</a></li>
+                                    <li><a href="">NGỮ PHÁP</a></li>
+                                </ul>
+                            </div>
+                            <div class="item-list-submenu">
+                                <h3>
+                                    <a href="">ĐỐ VUI</a>
+                                </h3>
+                                <ul>
+                                    <li><a href="">DÂN GIAN</a></li>
+                                    <li><a href="">MẸO</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li style="position: relative;"><a href="team.html">ĐỘI NGŨ XÂY DỰNG</a>
+                    <div class="sub-menu" style="width:230px;padding-left:20px;padding-right:0">
+                        <div class="item-list-submenu">
+                            <h3><a href="danhdang.html">DANH ĐĂNG(C)</a></h3>
+                            <br>
+                            <h3><a href="haidang.html">HẢI ĐĂNG</a></h3>
+                            <br>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </section>
-
-    <section id="types">
-        <div class="container">
-            <h2>Loại game</h2>
-            <p>Dưới đây là một số loại game trí tuệ bạn có thể thưởng thức:</p>
-            <div class="game-type">
-                <button class="game-btn" data-target="home">Đố Vui</button>
-                <button class="game-btn" data-target="rules">Giải Toán Nhanh</button>
-                <button class="game-btn" data-target="rules">Giải Đố Dân Gian</button>
-                <button class="game-btn" data-target="rules">Câu Hỏi Tiếng Anh Căn Bản</button>
+            <div class="logo">
+                <a href="index.html"><img src="image\logo.png" alt=""></a>
             </div>
-        </div>
-    </section>
-    
-
-    <section id="rules">
-        <div class="container">
-            <h2>Luật chơi</h2>
-            <p>Luật chơi của từng trò chơi sẽ được giới thiệu chi tiết tại đây.</p>
-            <h3>Giải Toán Nhanh</h3>
-            <p>Trong trò chơi Giải Toán Nhanh, Bạn sẽ có 3 giây để trả lời mỗi câu hỏi và sau mỗi câu hỏi độ khó sẽ tăng dần.</p>
-            <h3>Giải Đố Dân Gian</h3>
-            <p>Trò chơi Giải Đố Dân Gian yêu cầu bạn trả lời những câu hỏi xoắn não, đánh lừa được trích dẫn từ những câu đố truyền miệng dân gian Việt Nam.</p>
-            <!-- Thêm luật chơi cho các trò chơi khác -->
-        </div>
-    </section>
-
-    <section id="how-to-play">
-        <div class="container">
-            <h2>Cách chơi</h2>
-            <p>Thông tin về cách chơi của từng trò chơi sẽ được hướng dẫn ở đây.</p>
-            <h3>Giải Toán Nhanh</h3>
-            <p>Trong trò chơi Giải Toán Nhanh, bạn cần tính toán chi tiết và chọn câu trả lời đúng.</p>
-            <!-- Thêm hướng dẫn cách chơi cho các trò chơi khác -->
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>Giới thiệu</h2>
-            <p>Trang web chơi game trí tuệ là một dự án nhằm mang lại niềm vui và thử thách cho người chơi mọi lứa tuổi.</p>
-            <p>Chúng tôi tự hào cung cấp các trò chơi tuyệt vời<section id="features">
-                <div class="container">
-                    <h2>Đặc điểm của trò chơi</h2>
-                    <div class="feature">
-                        <img src="picture web\images.png" alt="Game 1">
-                        <h3>Giải Toán Nhanh</h3>
-                        <p>Giải Toán Nhanh là một trò chơi sự chính xác trong tính toán và rèn luyện bộ não nhanh nhạy.</p>
+            <div class="right-header">
+                <form action="">
+                    <button class="submit">
+                        <i class='bx bx-search'></i>
+                    </button>
+                    <input type="text" placeholder="TÌM KIẾM GAME">
+                    <div class="quick-search">
+                        <h4>Tìm kiếm nhiều nhất</h4>
+                        <br>
+                        <div class="most-search">
+                            <a href="">Toán Học</a>
+                            <a href="">Đố Vui</a>
+                           
                     </div>
-                    <div class="feature">
-                        <img src="picture web\tải xuống (1).jpg" alt="Game 2">
-                        <h3>Câu Hỏi Tiếng Anh</h3>
-                        <p>Phần Câu Hỏi Tiếng Anh yêu cầu bạn có kiến thức về ngoại ngữ để nhận biết và suy luận để tìm ra câu trả lời cho mỗi câu hỏi.</p>
+                    <br>
+                        <h4>Vừa tìm kiếm</h4>
+                        <br>
+                        <div class="recently-search">
+                            <a href="">Toán Học</a>
+                        </div>
                     </div>
-                    <!-- Thêm các đặc điểm của các trò chơi khác -->
+                </form>
+                <div class="header-action">
+                    <div id="iw1" class="item-wallet">
+                        <i style="cursor: pointer;" class='bx bx-headphone' ></i>
+                        <div class="sub-action">
+                            <div class="top-action">
+                                <h3>Trợ Giúp</h3>
+                            </div>
+                            <ul>
+                                <li><a href="">
+                                    <i class='bx bx-phone-call' ></i>Hotline
+                                </a></li>
+                                <li><a href="">
+                                    <i class='bx bx-message-rounded-dots' ></i>Live Chat
+                                </a></li>
+                                <li><a href="">
+                                    <i class='bx bx-loader-alt'></i>Messenger
+                                </a></li>
+                                <li><a href="">
+                                    <i class='bx bx-envelope' ></i>Email
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </section>     
-            <footer>
-                <section id="contact">
-                    <div class="container">
-                        <h2>Liên hệ</h2>
-                        <p>Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, vui lòng liên hệ với chúng tôi:</p>
+            </div>
+    </div>
+    <div class="slide">
+      <a href="">
+        <img
+          class="mySlides"
+          id="firstSlideImage"
+          src="https://pubcdn.ivymoda.com/files/news/2023/10/04/ff74da15a8c24facbaeb14418c38360a.jpg"
+        />
+      </a>
+      <a href="">
+        <img
+          class="mySlides"
+          src="https://pubcdn.ivymoda.com/files/news/2023/10/10/561633c5089b26de5ebd3ed5ed119bfd.jpg"
+        />
+      </a>
+      <a href="">
+        <img
+          class="mySlides"
+          src="https://pubcdn.ivymoda.com/files/news/2023/09/18/763adf6054c6f80388f529ab509315d4.jpg"
+        />
+      </a>
+      <a href="">
+        <img
+          class="mySlides"
+          src="https://pubcdn.ivymoda.com/files/news/2023/09/08/4fc7664285a1fa2ba47f9671afe955d9.jpg"
+        />
+      </a>
+      <button class="btn-left" onclick="plusDivs(-1)">
+        <img width="50" height="50" src="image/left-arrow.png" alt="left" />
+      </button>
+      <button class="btn-right" onclick="plusDivs(1)">
+        <img
+          width="50"
+          height="50"
+          src="image/right-arrow.png" alt="right"
+        />
+      </button>
+    </div>
+    <div class="content">
+        <div class="home-promote">
+            <h1>GAME MỚI</h1>
+            <div id="bottom">
+              <a href="">
+                <img
+                  id="#bottomImg1"
+                  src="https://pubcdn.ivymoda.com/files/news/2023/09/26/9e452577bfd96b978b3a361864bdb7b6.jpg"
+                  alt=""
+                />
+              </a>
+    
+              <a href="">
+                <img
+                  id="#bottomImg2"
+                  src="https://pubcdn.ivymoda.com/files/news/2023/09/26/e60d33855e655cbdfdb6af6d03cb0da8.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div id="line">
+              <img src="image/left-arrow.png" onclick="changePic()" />
+              <div id="line-inner"></div>
+              <img src="image/right-arrow.png" onclick="changePic()" />
+            </div>
+          </div>
+    
+      <div class="home-promote">
+        <h1>GIỚI THIỆU CHI TIẾT VỀ TRANG WEB</h1>
+        <div id="bottom">
+            <a href="">
+              <img
+                id="#bottomImg1"
+                src="https://pubcdn.ivymoda.com/files/news/2023/09/26/9e452577bfd96b978b3a361864bdb7b6.jpg"
+                alt=""
+              />
+            </a>
+        </div> 
+        <div id="bottom">
+          <a href="">
+            <img
+              id="#bottomImg1"
+              src="https://pubcdn.ivymoda.com/files/news/2023/09/26/9e452577bfd96b978b3a361864bdb7b6.jpg"
+              alt=""
+            />
+          </a>
+
+          <a href="">
+            <img
+              id="#bottomImg2"
+              src="https://pubcdn.ivymoda.com/files/news/2023/09/26/e60d33855e655cbdfdb6af6d03cb0da8.jpg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="home-promote">
+        <h1>ĐỘI NGŨ XÂY DỰNG TRANG WEB</h1>
+        <div id="bottom">
+          <a href="">
+            <img
+              id="#bottomImg1"
+              src="https://pubcdn.ivymoda.com/files/news/2023/09/26/9e452577bfd96b978b3a361864bdb7b6.jpg"
+              alt=""
+            />
+          </a>
+
+          <a href="">
+            <img
+              id="#bottomImg2"
+              src="https://pubcdn.ivymoda.com/files/news/2023/09/26/e60d33855e655cbdfdb6af6d03cb0da8.jpg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div id="line">
+          <div id="line-inner"></div>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="left-footer">
+                <div class="top-left-footer">
+                    <a href="homescreen.html"><img src="image/logo.png" alt=""></a>
+                </div>
+                <div class="content-left-footer">
+                    <div>
+                        <p><b>Địa chỉ: </b>Phenikaa Uni, Hà Đông, TP.Hà Nội, Việt Nam</p>
+                        <p><b>Số điện thoại: </b>0345062688/0582679535</p>
+                        <p><b>Email: </b>cskhdoubleD@gmail.com</p>
+                    </div>
+                    <div class="list-social">
+                        <a href=""><img src="https://pubcdn.ivymoda.com/ivy2/images/ic_fb.svg" alt=""></a>
+                        <a href=""><img src="https://pubcdn.ivymoda.com/ivy2/images/ic_gg.svg" alt=""></a>
+                        <a href=""><img src="https://pubcdn.ivymoda.com/ivy2/images/ic_instagram.svg" alt=""></a>
+                        <a href=""><img src="https://pubcdn.ivymoda.com/ivy2/images/ic_pinterest.svg" alt=""></a>
+                        <a href=""><img src="https://pubcdn.ivymoda.com/ivy2/images/ic_ytb.svg" alt=""></a>
+                    </div>
+                    <div class="hotline">
+                        <a href="">HOTLINE: 0345062688</a>
+                    </div>
+                </div>
+            </div>
+            <div class="center-footer">
+                <div class="left-center-footer">
+                    <p class="title-footer">Giới thiệu</p>
+                    <ul>
+                        <li><a href="">Nhân Sự</a></li>
+                        <li><a href="">Hệ thống trò chơi</a></li>
+                    </ul>
+                </div>
+                <div class="main-center-footer">
+                    <p class="title-footer">Dịch vụ người chơi</p>
+                    <ul>
+                        <li><a href="">Chính sách điều khoản</a></li>
+                        <li><a href="">Chính sách bản quyền</a></li>
+                        <li><a href="">Chính sách thẻ VIP</a></li>
+                        <li><a href="">Hệ thống trò chơi</a></li>
+                        <li><a href="">Q&A</a></li>
+                    </ul>
+                </div>
+                <div class="right-center-footer">
+                    <div class="left-center-footer">
+                        <p class="title-footer">Liên hệ</p>
                         <ul>
-                            <li>Email: info@example.com</li>
-                            <li>Điện thoại: 0123 456 789</li>
-                            <li>Địa chỉ: Số 123, Đường ABC, Thành phố XYZ</li>
+                            <li><a href="">Hotline</a></li>
+                            <li><a href="">Email</a></li>
+                            <li><a href="">Live Chat</a></li>
+                            <li><a href="">Messenger</a></li>
+                            <li><a href="">Liên hệ</a></li>
                         </ul>
                     </div>
-                </section>
-                
-                <div class="container">
-                    <p>&copy; 2024 Trang web chơi game trí tuệ. Đã đăng ký bản quyền.</p>
                 </div>
-            </footer>
-            </p>
+                <div class="right-center-footer">
+                    <div class="left-center-footer">
+                        <p class="title-footer">Thông Tin</p>
+                        <ul>
+                            <li><a href="">Cập Nhật</a></li>
+                            <li><a href="">Tổng Quan</a></li>
+                            <li><a href="">Tài Liệu</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-footer">
+                <div class="register-form">
+                    <p class="title-footer">Nhận thông tin các chương trình của Double D</p>
+                    <form id="frm-subcribe">
+                        <input type="text" name="email" placeholder="Nhập địa chỉ email" required="required">
+                        <button>Đăng ký</button>
+                    </form>
+                </div>
+                <div class="info-right-footer">
+                    <p class="title-footer">Download App</p>
+                    <ul>
+                        <li><a href=""><img src="https://pubcdn.ivymoda.com/ivy2/images/appstore.png" alt=""></a></li>
+                        <li><a href=""><img src="https://pubcdn.ivymoda.com/ivy2/images/googleplay.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="end">
+            <p>©</p>
+        </div>
+    </footer>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
-
