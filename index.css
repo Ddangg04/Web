@@ -460,8 +460,8 @@ footer {
   width: 25%;
 }
 .right-footer .title-footer {
+  text-align: center;
   font-size: 18px;
-  padding-right: 70px;
   line-height: 30px;
 }
 .info-right-footer {
