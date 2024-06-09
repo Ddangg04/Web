@@ -180,6 +180,10 @@ body {
   z-index: 999999;
   background-color: white;
 }
+.main {
+  padding: 10px 0;
+  margin: 0 100px;
+}
 .main-menu {
   display: flex;
 }
@@ -404,6 +408,7 @@ footer {
 }
 .top-left-footer img {
   width: 80px;
+  border-radius: 10px;
 }
 .top-left-footer > a:first-child > img {
   width: 120px;
@@ -522,4 +527,185 @@ div.send button {
 
 div.send button:hover {
   background-color: #000000;
+}
+/*thêm cho game.css*/
+.main {
+  padding: 10px 0;
+  margin: 0 100px;
+}
+.mini-menu {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.mini-menu ul {
+  display: flex;
+  border-bottom: 3px solid #eee;
+  padding-bottom: 20px;
+}
+
+.mini-menu li.strike:before {
+  content: "-";
+  margin-right: 20px;
+  padding-left: 15px;
+}
+.mini-menu ul li > a {
+  opacity: 0.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mini-main {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  height: 800px;
+}
+.mini-menu2 {
+  width: auto;
+}
+.mini-menu2 ul li {
+  border-bottom: 3px solid #eee;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.mini-menu2 li:last-child {
+  border-bottom: none;
+}
+.mini-menu2 ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mini-menu2 li {
+  position: relative;
+}
+.mini-menu2 ul.sub-menu2 {
+  position: absolute;
+  width: 200px;
+}
+.outside {
+  padding: 20px 0;
+  margin: 0 100px;
+}
+.sub-menu2 {
+  visibility: hidden;
+  background-color: #fff;
+  z-index: 1;
+  margin-top: 10px;
+}
+.sub-menu2 {
+  display: flex;
+}
+
+.text {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 50px;
+  flex-direction: column;
+  height: 1000px;
+}
+#sort-dropdown {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 15px;
+}
+.dropdown-container {
+  position: relative;
+}
+
+.chu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+.chu p {
+  font-size: 30px;
+}
+.tc-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.picture {
+  flex-direction: column;
+  position: relative;
+  width: 24%;
+}
+.picture img {
+  width: 100%;
+}
+.hinhanh1 {
+  position: relative;
+}
+.hold {
+  position: relative;
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s ease;
+  top: 0;
+  left: 0;
+}
+.hold:hover {
+  opacity: 1;
+}
+.hinhanh1 ul {
+  list-style: none;
+  padding-top: 15px;
+  margin: 0;
+  display: flex;
+}
+.hinhanh1 ul li {
+  margin-right: 2px;
+}
+
+.hinhanh1 ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.heart {
+  width: 5%;
+  padding-top: 15px;
+}
+.color-menu {
+  display: flex;
+  justify-content: space-between;
+  height: 5%;
+  padding-bottom: 10px;
+}
+ion-icon {
+  font-size: 20px;
+  align-items: center;
+}
+.list-color {
+  width: 70%;
+}
+del {
+  font-size: 13px;
+  opacity: 0.6;
+}
+ins {
+  text-decoration: none;
+  font-size: larger;
+}
+.price {
+  padding-top: 10px;
+}
+.add-to-cart {
+  display: flex;
+  justify-content: space-between;
+}
+.icon ion-icon {
+  color: #fff;
+  align-items: center;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.icon {
+  width: 10%;
+  background-color: #000;
+  border-radius: 30% 0 30% 0;
+  align-items: center;
+  justify-content: center;
 }
