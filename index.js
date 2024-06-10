@@ -36,7 +36,6 @@ function hover(img, newSrc) {
   // Thay đổi ảnh
   img.src = newSrc;
 }
-
 // Hàm khôi phục ảnh gốc khi di chuột ra
 function leave(img) {
   // Khôi phục ảnh gốc

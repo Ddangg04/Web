@@ -209,6 +209,31 @@ body {
   margin-bottom: 10px;
   margin-left: 20px;
 }
+.feature table {
+  width: 80%; /* Giảm chiều rộng của bảng xuống 80% */
+  border-collapse: collapse;
+  margin: 0 auto; /* Căn giữa bảng */
+  padding: 20px; /* Thêm padding cho bảng */
+}
+
+.feature th,
+.feature td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.feature tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.feature th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #020202;
+  color: white;
+}
 .main {
   padding: 10px 0;
   margin: 0 100px;
@@ -788,4 +813,27 @@ ins {
   border-radius: 30% 0 30% 0;
   align-items: center;
   justify-content: center;
+}
+#score {
+  background-color: #f8f9fa;
+  border: 2px solid #757373;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 15px 0;
+  text-align: center;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+#score h2 {
+  color: #495057;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#points {
+  color: #007bff;
+  font-size: 15px;
+  font-weight: bold;
 }
