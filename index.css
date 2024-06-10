@@ -38,6 +38,7 @@
   text-align: center;
   margin-top: 40px;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .home-promote ul {
@@ -63,6 +64,7 @@
   width: 1690px;
   height: 700px;
   margin-top: 60px;
+  margin-left: 20px;
   border-radius: 90px 1px;
 }
 
@@ -77,7 +79,6 @@
   margin-right: 60px;
   border-radius: 60px 1px;
 }
-
 #line {
   display: flex;
 }
@@ -169,16 +170,44 @@ body {
   overflow-x: hidden;
 }
 .container {
-  padding: 20px 0;
-  margin: 0 100px;
+  padding: 50px; /* Tăng padding để tạo không gian xung quanh nội dung */
+  margin: 0; /* Loại bỏ margin để div head full trang */
   border-bottom: 3px solid #eee;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  gap: 30px;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 999999;
   background-color: white;
+}
+.title-about {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.title-about h1 h2 p {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.feature {
+  align-items: center;
+  margin-bottom: 20px;
+}
+.feature img {
+  width: 200px;
+  height: auto;
+  margin-right: 30px;
+  border-radius: 30px;
+}
+.feature h1 h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 .main {
   padding: 10px 0;
@@ -394,6 +423,26 @@ body {
   border-radius: 50%;
   padding: 1px 6px;
 }
+.team {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.team > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.team img {
+  width: 200px;
+  height: auto;
+  margin: 30px;
+  border-radius: 20px;
+}
+.text-container {
+  /* Loại bỏ align-self: flex-end; */
+}
 footer {
   margin-top: 20px;
   border-top: 1px solid #6c6d70;
@@ -528,6 +577,37 @@ div.send button {
 div.send button:hover {
   background-color: #000000;
 }
+.exclusive ul {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.exclusive ul li {
+  color: #6c6d70;
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 56px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.exclusive .active {
+  color: #221f20;
+  border-bottom: 2px solid #221f20;
+}
+
+.exclusive-inner {
+  margin-top: 20px;
+}
+
+.exclusive-inner ul {
+  display: flex;
+}
+
+.exclusive-inner ul li {
+  margin-right: 35px;
+}
+
 /*thêm cho game.css*/
 .main {
   padding: 10px 0;
