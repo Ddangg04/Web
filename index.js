@@ -90,5 +90,3 @@ const questions = {
     },
   ],
 };
-
-let currentQuestions = [];
