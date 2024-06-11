@@ -62,7 +62,6 @@ const questions = {
       answer: "B",
       hint: "It's the same as 2 times 2.",
     },
-    // Add more questions here
   ],
   english: [
     {
@@ -76,7 +75,6 @@ const questions = {
       answer: "B",
       hint: "It means the same as joyful.",
     },
-    // Add more questions here
   ],
   general: [
     {
@@ -90,7 +88,6 @@ const questions = {
       answer: "C",
       hint: "It's known as the city of love.",
     },
-    // Add more questions here
   ],
 };
 
