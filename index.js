@@ -48,126 +48,50 @@ $(document).ready(function () {
     $(this).children(".sub-action").slideToggle();
   });
 });
-//Js choi game
-document.addEventListener("DOMContentLoaded", () => {
-  const startScreen = document.getElementById("start-screen");
-  const gameTypeScreen = document.getElementById("game-type-screen");
-  const quizScreen = document.getElementById("quiz-screen");
-  const startBtn = document.getElementById("start-btn");
-  const gameTypeBtns = document.querySelectorAll(".game-type-btn");
-  const backBtn = document.getElementById("back-btn");
-  const quizBackBtn = document.getElementById("quiz-back-btn");
-  const questionElement = document.getElementById("question");
-  const optionBtns = document.querySelectorAll(".option-btn");
-  const hintElement = document.getElementById("hint-text");
 
-  let currentQuestionIndex = 0;
-  let score = 0;
-
-  const questions = {
-    math: [
-      {
-        question: "What is 2 + 2?",
-        options: {
-          A: "3",
-          B: "4",
-          C: "5",
-          D: "6",
-        },
-        answer: "B",
-        hint: "It's the same as 2 times 2.",
+const questions = {
+  math: [
+    {
+      question: "What is 2 + 2?",
+      options: {
+        A: "3",
+        B: "4",
+        C: "5",
+        D: "6",
       },
-      // Add more questions here
-    ],
-    english: [
-      {
-        question: "What is the synonym of 'happy'?",
-        options: {
-          A: "Sad",
-          B: "Joyful",
-          C: "Angry",
-          D: "Tired",
-        },
-        answer: "B",
-        hint: "It means the same as joyful.",
+      answer: "B",
+      hint: "It's the same as 2 times 2.",
+    },
+    // Add more questions here
+  ],
+  english: [
+    {
+      question: "What is the synonym of 'happy'?",
+      options: {
+        A: "Sad",
+        B: "Joyful",
+        C: "Angry",
+        D: "Tired",
       },
-      // Add more questions here
-    ],
-    general: [
-      {
-        question: "What is the capital of France?",
-        options: {
-          A: "Berlin",
-          B: "Madrid",
-          C: "Paris",
-          D: "Rome",
-        },
-        answer: "C",
-        hint: "It's known as the city of love.",
+      answer: "B",
+      hint: "It means the same as joyful.",
+    },
+    // Add more questions here
+  ],
+  general: [
+    {
+      question: "What is the capital of France?",
+      options: {
+        A: "Berlin",
+        B: "Madrid",
+        C: "Paris",
+        D: "Rome",
       },
-      // Add more questions here
-    ],
-  };
+      answer: "C",
+      hint: "It's known as the city of love.",
+    },
+    // Add more questions here
+  ],
+};
 
-  let currentQuestions = [];
-
-  startBtn.addEventListener("click", () => {
-    startScreen.classList.remove("active");
-    gameTypeScreen.classList.add("active");
-  });
-
-  gameTypeBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const gameType = btn.getAttribute("data-type");
-      currentQuestions = questions[gameType];
-      gameTypeScreen.classList.remove("active");
-      quizScreen.classList.add("active");
-      loadQuestion();
-    });
-  });
-
-  backBtn.addEventListener("click", () => {
-    gameTypeScreen.classList.remove("active");
-    startScreen.classList.add("active");
-  });
-
-  quizBackBtn.addEventListener("click", () => {
-    quizScreen.classList.remove("active");
-    gameTypeScreen.classList.add("active");
-  });
-
-  optionBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const answer = btn.getAttribute("data-answer");
-      if (answer === currentQuestions[currentQuestionIndex].answer) {
-        score += 10;
-        currentQuestionIndex++;
-        if (currentQuestionIndex < currentQuestions.length) {
-          loadQuestion();
-        } else {
-          alert(`Quiz completed! Your score is ${score}.`);
-          resetGame();
-        }
-      } else {
-        alert("Wrong answer! Try again.");
-      }
-    });
-  });
-
-  function loadQuestion() {
-    const currentQuestion = currentQuestions[currentQuestionIndex];
-    questionElement.textContent = currentQuestion.question;
-    optionBtns.forEach((btn) => {
-      const option = btn.getAttribute("data-answer");
-      btn.textContent = currentQuestion.options[option];
-    });
-    hintElement.textContent = currentQuestion.hint;
-  }
-
-  function resetGame() {
-    currentQuestionIndex = 0;
-    score = 0;
-    quizScreen.classList.remove("active");
-    startScreen.classList.add("active");
-  }
-});
+let currentQuestions = [];

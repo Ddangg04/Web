@@ -873,9 +873,6 @@ ins {
 /* CSS for back button */
 #back-btn,
 #quiz-back-btn {
-  padding: 5px;
-  cursor: pointer;
-  position: relative;
   margin: 10px;
   background-color: #7bdfdc;
   border-color: transparent;
