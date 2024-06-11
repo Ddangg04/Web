@@ -170,8 +170,8 @@ body {
   overflow-x: hidden;
 }
 .container {
-  padding: 50px; /* Tăng padding để tạo không gian xung quanh nội dung */
-  margin: 0; /* Loại bỏ margin để div head full trang */
+  padding: 50px;
+  margin: 0; /* Loại bỏ margin để div full trang */
   border-bottom: 3px solid #eee;
   display: flex;
   justify-content: space-between;
